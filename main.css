@@ -1,3 +1,25 @@
 body {
-    background: black;
-}
+    background-color: black;
+    color: antiquewhite;
+    display:flex;
+  }
+  
+  #bio{
+    border: 5px double red;
+  }
+  
+  #navBar{
+    border: 5px double yellow;
+  }
+  
+  #body1{
+    border: 5px double green;
+  }
+  
+  #body2{
+    border: 5px double blue;
+  }
+  
+  #footer{
+    border: 5px double indigo;
+  }
