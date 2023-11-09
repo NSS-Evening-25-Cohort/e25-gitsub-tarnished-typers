@@ -29,3 +29,7 @@ body {
   #footer{
     border: 5px double indigo;
   }
+
+  img {
+    border-radius: 50%;
+  }
