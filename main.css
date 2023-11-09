@@ -5,6 +5,11 @@ body {
     font-family: Arial, sans-serif;
   }
   
+.black{
+  background-color: black;
+  color: antiquewhite;
+}
+
   #bio{
     border: 5px double red;
   }

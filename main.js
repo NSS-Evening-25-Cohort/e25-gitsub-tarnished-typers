@@ -5,6 +5,9 @@ const btnOverView = document.createElement("BUTTON");
 const btnRepostories = document.createElement("BUTTON");
 const btnProjects = document.createElement("BUTTON");
 const btnPackages = document.createElement("BUTTON");
+const outputTop = document.querySelector("#body1");
+const outputForm = document.querySelector("#body2");
+
 
 btnOverView.innerHTML = `<img src="images/OverviewIcon.png" alt="overview Icon" width="25" height="25">Overview`;
 btnOverView.id = "overview";
@@ -22,16 +25,55 @@ btnProjects.innerHTML=`<img src="images/ProjectsIcon.png" alt="projects Icon" wi
 btnProjects.id = "projects";
 btnProjects.className = "btn btn-outline-light";
 btnProjects.type = "button";
-btnRepostories.onclick = function(){alert("Dynamic Projects button Clicked")};
+btnProjects.onclick = function(){alert("Dynamic Projects button Clicked")};
 
 btnPackages.innerHTML=`<img src="images/PackagesIcon.png" alt="packages Icon" width="25" height="25">Packages`;
 btnPackages.id = "packages";
 btnPackages.className = "btn btn-outline-light";
 btnPackages.type = "button";
-btnRepostories.onclick = function(){alert("Dynamic Packages button Clicked")};
+btnPackages.onclick = function(){alert("Dynamic Packages button Clicked")};
 
 navbuttons = [btnOverView, btnRepostories, btnProjects, btnPackages]
 
 navbuttons.forEach(element => {
   navBar.appendChild(element);
+});
+
+const tagList = (array) => {
+  tempArray = [];
+  tagString = "";
+  array.forEach(element => {
+    tagString = `<button>${element}</button>`
+    tempArray.unshift(tagString)
+  });
+  return tempArray;
+}
+
+const renderToDom = (array) => {
+  let topOutput = "";
+  for(object of array){
+    topOutput += `
+    <div class="card .bg-dark black" style="width: 69rem;">
+      <div class="card-body .bg-dark">
+        <h5 class="card-title">${object.title}</h5>
+        <p class="card-text">Some quick example text to describe the repo card's content.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" class="btn btn-primary flex-row-reverse btn-secondary"><img src="images/starIcon.png" alt="star icon Icon" width="25" height="25">Star</a></p>        
+        <div class="tags small ">${tagList(object.tags)}</div>
+        <div class="small margin-left: ($spacer * .25)"><span>Project language  &nbsp;&nbsp;&nbsp;   </span><span> <img src="images/starIcon.png" alt="star icon Icon" width="25" height="25"> ${object.stars}     </span><span><img src="images/forkIcon.png" alt="fork icon" width="25" height="25">  ${object.forks}</span><span>, &nbsp;   &  &nbsp;    ${object.issues} issue(s) needs help!  &nbsp;&nbsp; </span><span>  &nbsp;&nbsp;  The repo was last updated ${object.lastUpdate} days ago</span></div>
+      </div>
+    </div>
+    <hr>
+    `
+  }
+  outputTop.innerHTML = topOutput;
+  console.log(outputTop);
+}
+
+
+navBar.addEventListener("click", (event) => {
+
+  if(event.target.id.includes("repositories")){
+      console.log(repositories);
+      renderToDom(repositories);
+  }    
+
 });
