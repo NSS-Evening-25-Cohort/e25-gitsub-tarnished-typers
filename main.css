@@ -1,9 +1,15 @@
 body {
     background-color: black;
     color: antiquewhite;
-    display:flex;
+    display: flex;
+    font-family: Arial, sans-serif;
   }
   
+.black{
+  background-color: black;
+  color: antiquewhite;
+}
+
   #bio{
     border: 5px double red;
   }
@@ -23,6 +29,7 @@ body {
   #footer{
     border: 5px double indigo;
   }
+
 
 
 /* .packageAlign {
@@ -45,3 +52,7 @@ body {
   padding: 10px;
   background-color: white;
 }
+=======
+  img {
+    border-radius: 50%;
+  }
