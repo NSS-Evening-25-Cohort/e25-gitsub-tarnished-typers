@@ -51,6 +51,7 @@ const tagList = (array) => {
 
 const renderToDom = (array) => {
   let topOutput = "";
+  outputTop.innerHTML = topOutput;
   for(object of array){
     topOutput += `
     <div class="card .bg-dark black" style="width: 69rem;">
@@ -74,6 +75,9 @@ navBar.addEventListener("click", (event) => {
   if(event.target.id.includes("repositories")){
       console.log(repositories);
       renderToDom(repositories);
-  }    
+  }  else   if(event.target.id.includes("packages")){
+    console.log(packages);
+    packagesToDom(packages);
+}   
 
 });

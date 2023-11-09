@@ -1,26 +1,6 @@
-const packages = [
-  {
-    id: 1,
-    name: "Docker",
-    description: "software platform for building apps based on containers",
-  },
+const app = document.querySelector("#body1")
 
-  {
-    id: 1,
-    name: "Apache Maven",
-    description: "default package manager used for javascript",
-  },
-
-  {
-    id: 1,
-    name: "NuGet",
-    description: "open source package manager used for microsoft dev platforms",
-  },
-]
-
-const app = document.querySelector("#app")
-
-const renderToDom = (array) => {
+const packagesToDom = (array) => {
   let domString = ""
 
   for (let i = 0; i < array.length; i++) {
@@ -36,7 +16,7 @@ const renderToDom = (array) => {
   app.innerHTML = domString
 }
 
-renderToDom(packages)
+packagesToDom(packages)
 
 const form = document.querySelector('form')
 
@@ -48,7 +28,7 @@ const addPack = (event) => {
     description: document.querySelector("#descPack").value,
   }; 
   packages.push(newPackage)
-  renderToDom(packages)
+  packagesToDom(packages)
   form.reset()
 }
 form.addEventListener('submit', addPack)

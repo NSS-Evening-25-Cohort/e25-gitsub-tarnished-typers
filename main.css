@@ -30,14 +30,6 @@ body {
     border: 5px double indigo;
   }
 
-
-
-/* .packageAlign {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-} */
-
 .form-popup {
   display: none;
   position: fixed;
@@ -52,7 +44,6 @@ body {
   padding: 10px;
   background-color: white;
 }
-=======
   img {
     border-radius: 50%;
   }
