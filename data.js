@@ -16,6 +16,21 @@ const packages = [
     name: "NuGet",
     description: "open source package manager used for microsoft dev platforms",
   },
+  {
+    id: 1,
+    name: "RubyGems",
+    description: "standard format for distributing Ruby programs and libraries",
+  },
+  {
+    id: 1,
+    name: "npm",
+    description: "makes it easy for developers to share and reuse code",
+  },
+  {
+    id: 1,
+    name: "Containers",
+    description: "single place for your team to manage Docker images",
+  },
 ]
 
 const projects = [

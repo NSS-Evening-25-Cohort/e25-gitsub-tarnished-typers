@@ -30,11 +30,36 @@ body {
     border: 5px double indigo;
   }
 
+.packageStyle {
+  background-color: black;
+  border: 1px solid antiquewhite;
+}
+
+.learnMore {
+  background-color: gray;
+  color: antiquewhite;
+  border-radius: 5px;
+  padding: 5px;
+}
 
 .form-container {
   padding: 10px;
-  background-color: white;
+  background-color: black;
 }
+
+#descPack {
+  background-color: antiquewhite;
+}
+#namePack {
+  background-color: antiquewhite; 
+}
+.addPackage{
+  background-color: gray;
+  border: none;
+  padding: 8px;
+  color: antiquewhite;
+}
+
   img {
     border-radius: 50%;
   }
