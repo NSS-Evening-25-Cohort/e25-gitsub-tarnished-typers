@@ -5,7 +5,7 @@ const packagesToDom = (array) => {
   let domString = ""
 
   for (let i = 0; i < array.length; i++) {
-    domString += `<div class="card packageAlign" style="width: 18rem;">
+    domString += `<div class="card packageStyle" style="width: 18rem;">
 
     <div class="card-body">
       <h5 class="card-title">${array[i].name}</h5>
