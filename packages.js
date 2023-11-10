@@ -16,8 +16,8 @@ const packagesToDom = (array) => {
   }
   app.innerHTML = domString
 }
-
 packagesToDom(packages)
+
 
 const formToDom = () => {
   let formString = ""
@@ -36,8 +36,6 @@ const formToDom = () => {
     </form>
   </div>`
 packForm.innerHTML = formString
-}
-
 
 const form = document.querySelector('form')
 
@@ -53,3 +51,6 @@ const addPack = (event) => {
   form.reset()
 }
 form.addEventListener('submit', addPack)
+}
+
+

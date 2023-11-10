@@ -25,7 +25,7 @@ btnProjects.innerHTML=`<img src="images/ProjectsIcon.png" alt="projects Icon" wi
 btnProjects.id = "projects";
 btnProjects.className = "btn btn-outline-light";
 btnProjects.type = "button";
-btnProjects.onclick = function(){alert("Dynamic Projects button Clicked")};
+// btnProjects.onclick = function(){alert("Dynamic Projects button Clicked")};
 
 btnPackages.innerHTML=`<img src="images/PackagesIcon.png" alt="packages Icon" width="25" height="25">Packages`;
 btnPackages.id = "packages";
@@ -79,6 +79,9 @@ navBar.addEventListener("click", (event) => {
     console.log(packages);
     packagesToDom(packages);
     formToDom()
-}   
+} else if (event.target.id.includes("projects")){
+  projectsToDom(projects)
+  projectFormToDom()
+}  
 
 });
