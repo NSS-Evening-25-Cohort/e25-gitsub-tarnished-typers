@@ -1,4 +1,5 @@
 const app = document.querySelector("#body1")
+const packForm = document.querySelector("#body2")
 
 const packagesToDom = (array) => {
   let domString = ""
@@ -17,6 +18,26 @@ const packagesToDom = (array) => {
 }
 
 packagesToDom(packages)
+
+const formToDom = () => {
+  let formString = ""
+  packForm.innerHTML = formString
+  formString += `<div class="mb-3" id="myForm">
+    <form class="form-container">
+    <h1>Add a new Package</h1>
+
+    <label for="namePack"><b>Name of Package</b></label>
+    <input type="text" name="Package" id="namePack" required>
+
+    <label for="descPack"><b>Description</b></label>
+    <input type="text" name="description" id="descPack" required>
+    <button type="submit" class="addPackage btn btn-primary">Submit</button>
+
+    </form>
+  </div>`
+packForm.innerHTML = formString
+}
+
 
 const form = document.querySelector('form')
 

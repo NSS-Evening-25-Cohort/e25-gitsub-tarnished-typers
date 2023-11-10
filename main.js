@@ -73,11 +73,12 @@ const renderToDom = (array) => {
 navBar.addEventListener("click", (event) => {
 
   if(event.target.id.includes("repositories")){
-      console.log(repositories);
+      outputForm.innerHTML = "";
       renderToDom(repositories);
   }  else   if(event.target.id.includes("packages")){
     console.log(packages);
     packagesToDom(packages);
+    formToDom()
 }   
 
 });
