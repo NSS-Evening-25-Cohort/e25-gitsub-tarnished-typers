@@ -121,3 +121,7 @@ body {
   .lrg{
     font-size: larger;
   }
+
+  #pin {
+    background-color:rgb(0, 0, 0);
+  }
