@@ -52,5 +52,3 @@ const addPack = (event) => {
 }
 form.addEventListener('submit', addPack)
 }
-
-
