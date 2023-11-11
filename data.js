@@ -70,6 +70,7 @@ const repositories = [
   {
       id: 1,
       title: "INDIVIDUAL-PROJECT-sorting-hat",
+      description: "Harry Potter sorting hat",
       tags: ["Html","CSS","Javascript", "Harry Potter","Magic"],
       stars: 6,
       forks: 1,
@@ -80,6 +81,7 @@ const repositories = [
     {
       id: 2,
       title: "ASSIGNMENT-pet-adoption",
+      description: "Mock up pet adoption app",
       tags: ["Html","CSS","Javascript", "Pets","Fur Babies"],
       stars: 6,
       forks: 1,
@@ -90,6 +92,7 @@ const repositories = [
     {
       id: 3,
       title: "LAB-calculator",
+      description: "Functioning calculator project",
       tags: ["Html","CSS","Javascript", "logic","wut"],
       stars: 6,
       forks: 1,
@@ -100,6 +103,7 @@ const repositories = [
     {
       id: 4,
       title: "LAB-HTML-Resume",
+      description: "Rendered personal resume to an html page with styling",
       tags: ["Html","CSS","Javascript", "Just Starting","Git It"],
       stars: 6,
       forks: 1,
@@ -110,6 +114,7 @@ const repositories = [
     {
       id: 5,
       title: "LAB-word-counter",
+      description: "Basic word counter",
       tags: ["Html","CSS","Javascript", "1,2,3,4,5 ... 11, 12","tip-toes"],
       stars: 6,
       forks: 1,
