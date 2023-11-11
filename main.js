@@ -75,20 +75,39 @@ const renderOverview = () => {
   outputTop.innerHTML = topOutput;
   
     topOutput = `
-    <div class="rcorners">
+    <div>
       <h4>Ranni McColbupalenick</h4>
       <h2>Hi, I'm Ranni McColbupalenick &#128075; &#128187;</h2>
-        <div id="overviewDiv">
-          <div class="inline">
-            <h1>Ranni McColbupalenick</h1>
-            <h4 >slayer of gods, software and spells, parry =()=> reposte</h4>          
-          </div>
-          <div class="inline">
-            <img src="images/https_zoo_replicate_dev head shot of a professional female computer scientist SDXL.png" alt="Ranni Pic" width="250" height="250">
-          </div>          
+      <div id="overviewDiv">
+        <div class="inline">
+          <h1>Ranni McColbupalenick</h1>
+          <h4 class="grey">slayer of gods, software and spells, parry =()=> reposte</h4>          
         </div>
+        <div class="inline">
+          <img src="images/https_zoo_replicate_dev head shot of a professional female computer scientist SDXL.png" class="profile" alt="Ranni Pic" width="250" height="250">
+        </div>          
       </div>
-    <hr>
+    </div>
+    <div>
+      <P>Ranni, the code-weaving enchantress of The Lands Between, effortlessly conjures a symphony of algorithms and mystical functions. Armed with her private repo "EldenGit," she commits spells to the ethereal repository, branching timelines with a finesse reminiscent of a well-orchestrated merge.
+
+      With a wizardly understanding of object-oriented sorcery, she encapsulates spells within polymorphic structures, allowing for dynamic invocation that adapts to the ever-shifting landscapes that is the softwareenge. Ranni's domain extends to the cloud, where she orchestrates magical instances in a serverless dance, gracefully allocating resources like a spellbound load balancer.
+      </P>
+    </div>
+      <br>
+      <hr>
+      <div>
+        <div class="inline"><img src="images/gitCatRobot.png" alt="motivational gif" width="169" height="250"></div>        
+        <div class="inline">
+          <h2>Find Me on the Web &#127758</h2>
+          <hr>
+          <ul class="lrg">
+            <li>Hack-a-thons - &#128187;</li>
+            <li>Game Jams - &#128206;</li>
+            <li>Sharing updates on linkedIn - &#128188;</li>
+          </ul> 
+        </div> 
+      </div>
     `
 
   outputTop.innerHTML = topOutput;
