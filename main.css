@@ -62,6 +62,20 @@ body {
   color: antiquewhite;
 }
 
+#titleRepo {
+  background-color: antiquewhite; 
+}
+#descRepo {
+  background-color: antiquewhite; 
+}
+
+.addRepository {
+  background-color: gray;
+  border: none;
+  padding: 8px;
+  color: antiquewhite;
+}
+
   img {
     border-radius: 50%;
   }
