@@ -33,7 +33,6 @@ document.addEventListener('DOMContentLoaded', function () {
   const formDiv = document.getElementById('body2');
   const formHTML = `
     <div class="mb-3">
-    <legend>Create a new project</legend>
     <div id="emailHelp" class="form-text">Coordinate, track, and update your work in one place, so projects stay transparent and on schedule.</div>
       <label for="exampleFormControlInput1" class="form-label">Project Board Name</label>
       <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Example 2">
