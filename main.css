@@ -107,3 +107,23 @@ body {
   .lrg{
     font-size: larger;
   }
+
+#projectcards {
+  background-color: black;
+}  
+
+.projects-form {
+  background: rgb(13, 11, 11);
+}
+
+.project-title {
+  background-color: #f6f5f8;
+  color: black;
+}
+
+.project-description {
+  background-color: #fafafd;
+}
+
+
+

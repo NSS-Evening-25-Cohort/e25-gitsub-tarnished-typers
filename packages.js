@@ -16,7 +16,7 @@ const packagesToDom = (array) => {
   }
   app.innerHTML = domString
 }
-packagesToDom(packages)
+// packagesToDom(packages)
 
 
 const formToDom = () => {
