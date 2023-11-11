@@ -12,6 +12,7 @@ body {
 
   #bio{
     border: 5px double red;
+    min-width: 300px;
   }
   
   #navBar{
@@ -62,4 +63,38 @@ body {
 
   img {
     border-radius: 50%;
+  }
+
+  .center {
+    margin: auto;
+    text-align: center;
+    border: 3px solid antiquewhite;
+    padding: 10px;
+  }
+
+  .rcorners {
+    border-radius: 25px;
+    border: 2px solid antiquewhite;
+    padding: 20px; 
+  }
+
+  .spacer{
+    display:inline-block;
+    padding-left:26px;
+    color: #2a486c;
+  }
+
+  #overviewDiv{
+    
+    background-color: white;
+    padding-left:26px;
+    color: black;
+  }
+
+  .grey{
+    color:#828092
+  }
+  .inline{
+    display:inline-block;
+    padding: 5px;
   }
