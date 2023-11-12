@@ -122,14 +122,15 @@ navBar.addEventListener("click", (event) => {
       outputForm.innerHTML = "";
       renderToDom(repositories);
   }  else   if(event.target.id.includes("packages")){
-    console.log(packages);
+    outputForm.innerHTML = "";
     packagesToDom(packages);
     formToDom()
 } else if (event.target.id.includes("projects")){
+  outputForm.innerHTML = "";
   projectsToDom(projects)
   projectFormToDom()
 } else if (event.target.id.includes("overview")){
-  console.log("Overview?")
+  outputForm.innerHTML = "";
   overviewToDom();  
 } 
 });
