@@ -16,7 +16,7 @@ const packagesToDom = (array) => {
   }
   app.innerHTML = domString
 }
-packagesToDom(packages)
+// packagesToDom(packages)
 
 
 const formToDom = () => {
@@ -52,5 +52,3 @@ const addPack = (event) => {
 }
 form.addEventListener('submit', addPack)
 }
-
-

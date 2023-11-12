@@ -57,9 +57,9 @@ const renderToDom = (array) => {
     <div class="card .bg-dark black" style="width: 69rem;">
       <div class="card-body .bg-dark">
         <h5 class="card-title">${object.title}</h5>
-        <p class="card-text">Some quick example text to describe the repo card's content.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" class="btn btn-primary flex-row-reverse btn-secondary"><img src="images/starIcon.png" alt="star icon Icon" width="25" height="25">Star</a></p>        
+        <p class="card-text">${object.description} <a href="#" class="btn btn-primary flex-row-reverse btn-secondary"><img src="images/starIcon.png" alt="star icon Icon" width="25" height="25">Star</a></p>        
         <div class="tags small ">${tagList(object.tags)}</div>
-        <div class="small margin-left: ($spacer * .25)"><span>Project language  &nbsp;&nbsp;&nbsp;   </span><span> <img src="images/starIcon.png" alt="star icon Icon" width="25" height="25"> ${object.stars}     </span><span><img src="images/forkIcon.png" alt="fork icon" width="25" height="25">  ${object.forks}</span><span>, &nbsp;   &  &nbsp;    ${object.issues} issue(s) needs help!  &nbsp;&nbsp; </span><span>  &nbsp;&nbsp;  The repo was last updated ${object.lastUpdate} days ago</span></div>
+        <div class="small margin-left: ($spacer * .25)"><span>Project language </span><span> <img src="images/starIcon.png" alt="star icon Icon" width="25" height="25"> ${object.stars}     </span><span><img src="images/forkIcon.png" alt="fork icon" width="25" height="25">  ${object.forks}</span><span>, ${object.issues} issue(s) needs help! </span><span> The repo was last updated ${object.lastUpdate} days ago</span></div>
       </div>
     </div>
     <hr>
@@ -121,6 +121,7 @@ navBar.addEventListener("click", (event) => {
   if(event.target.id.includes("repositories")){
       outputForm.innerHTML = "";
       renderToDom(repositories);
+      repoForm()
   }  else   if(event.target.id.includes("packages")){
     outputForm.innerHTML = "";
     packagesToDom(packages);
