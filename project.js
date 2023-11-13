@@ -3,7 +3,7 @@ const projectsForm = document.querySelector("#body2");
 const projectsToDom = (array) => {
   let domString = "";
   array.forEach((project, i) => {
-    domString += ` <div class="card" id="projectcards" >
+    domString += ` <div class="card" id="projectcards" style="width: 40rem;">
         
         <div class="project-card-body">
         <div class="title">
@@ -13,7 +13,7 @@ const projectsToDom = (array) => {
         ${project.description}
         </div>
         <div class="updated">
-            ${project.updated}
+            updated: ${project.updated}
         </div>
       </div>
      </div>
@@ -29,6 +29,7 @@ const projectFormToDom = () => {
   projectsForm.innerHTML = formString;
   formString += `   <div class="projects-form">
   <form action="#" id="project-form">
+  <label for="projects-form-title">Add a new project</label><br>
       <input
         class="project-title"
         type="text"
@@ -41,8 +42,8 @@ const projectFormToDom = () => {
         class="project-description"
         type="text"
         name="description"
-        placeholder="Project description"
-        required
+        placeholder="Description (optional)"
+        
       />
 
       <button class="project-form-button" type="submit">submit</button>

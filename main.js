@@ -76,23 +76,17 @@ const renderOverview = () => {
   
     topOutput = `
     <div>
-      <h4>Ranni McColbupalenick</h4>
-      <h2>Hi, I'm Ranni McColbupalenick &#128075; &#128187;</h2>
-      <div id="overviewDiv">
-        <div class="inline">
-          <h1>Ranni McColbupalenick</h1>
-          <h4 class="grey">slayer of gods, software and spells, parry =()=> reposte</h4>          
+    <div id="overviewDiv" style="width: 50rem";>
+    <div class="inline">
+          <h4 class="grey">Ranni McColbupalenick - slayer of gods, software and spells, parry =()=> reposte</h4>          
         </div>
         <div class="inline">
-          <img src="images/https_zoo_replicate_dev head shot of a professional female computer scientist SDXL.png" class="profile" alt="Ranni Pic" width="250" height="250">
-        </div>          
+        
+          </div>          
       </div>
     </div>
     <div>
-      <P>Ranni, the code-weaving enchantress of The Lands Between, effortlessly conjures a symphony of algorithms and mystical functions. Armed with her private repo "EldenGit," she commits spells to the ethereal repository, branching timelines with a finesse reminiscent of a well-orchestrated merge.
-
-      With a wizardly understanding of object-oriented sorcery, she encapsulates spells within polymorphic structures, allowing for dynamic invocation that adapts to the ever-shifting landscapes that is the softwareenge. Ranni's domain extends to the cloud, where she orchestrates magical instances in a serverless dance, gracefully allocating resources like a spellbound load balancer.
-      </P>
+      <P>I am a skilled software developer with expertise in object-oriented programming and cloud computing. I work on my private repository "EldenGit" with finesse and easily adapt to the ever-changing software landscape. My magical abilities extend to the cloud, where I gracefully allocate resources like a spellbound load balancer. </P>
     </div>
       <br>
       <hr>
