@@ -7,7 +7,7 @@ const btnProjects = document.createElement("BUTTON");
 const btnPackages = document.createElement("BUTTON");
 const outputTop = document.querySelector("#body1");
 const outputForm = document.querySelector("#body2");
-
+const showBio = document.querySelector("#bio");
 
 btnOverView.innerHTML = `<img src="images/OverviewIcon.png" alt="overview Icon" width="25" height="25">Overview`;
 btnOverView.id = "overview";
@@ -69,11 +69,9 @@ const renderToDom = (array) => {
   console.log(outputTop);
 }
 
-const renderOverview = () => {
-  console.log("did i render the correct thing?")
+const renderBio = () => {
   let topOutput = "";
-  outputTop.innerHTML = topOutput;
-  
+  outputTop.innerHTML = topOutput;  
     topOutput = `
     <div>
       <h4>Ranni McColbupalenick</h4>
@@ -109,29 +107,70 @@ const renderOverview = () => {
         </div> 
       </div>
     `
-
   outputTop.innerHTML = topOutput;
-  console.log(topOutput);
 }
+
+showBio.addEventListener("click", (event) => {
+  renderBio();
+});
 
 
 navBar.addEventListener("click", (event) => {
+  
 
   if(event.target.id.includes("repositories")){
       outputForm.innerHTML = "";
       renderToDom(repositories);
       repoForm()
   }  else   if(event.target.id.includes("packages")){
-    console.log(packages);
+    outputForm.innerHTML = "";
     packagesToDom(packages);
     formToDom()
 } else if (event.target.id.includes("projects")){
+  outputForm.innerHTML = "";
   projectsToDom(projects)
   projectFormToDom()
 } else if (event.target.id.includes("overview")){
-  console.log("Overview?")
-  renderOverview();
-  
+  outputForm.innerHTML = "";
+  overviewToDom();  
 } 
-
 });
+
+const overviewToDom = (repos) => {
+
+  function createCard(title, tags, stars, forks, issues) {
+    const card = document.createElement('div');
+    card.classList.add('col-md-6', 'mb-4');
+
+    card.innerHTML = `
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">${title}</h5>
+          <p class="card-text">Tags: ${tags.join(', ')}</p>
+          <p class="card-text">Stars: ${stars}, Forks: ${forks}, Issues: ${issues}</p>
+        </div>
+      </div>
+    `;
+    return card;
+  }
+  outputTop.innerHTML ="";
+  function renderCardsToDOM(dataArray) {
+    console.log(dataArray);
+    const outputSection1 = document.getElementById('body1');
+
+    dataArray.forEach(data => {
+      const card = createCard(data.title, data.tags, data.stars, data.forks, data.issues);
+      outputSection1.appendChild(card);
+    });
+  }
+
+  // Render to "Output section 1"
+  renderCardsToDOM(repositories);
+};
+
+const init=()=>{
+  console.log("in init");
+  overviewToDom();
+}
+
+init();
