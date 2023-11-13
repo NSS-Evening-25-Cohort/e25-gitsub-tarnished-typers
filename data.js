@@ -37,27 +37,32 @@ const projects = [
   {
       id: 1,
       title: "Week 1 Project",
-      updated: "5 weeks ago"
+      updated: "5 weeks ago",
+      description: "Intro to HTML"
     },
     {
       id: 2,
       title: "Week 2 Project",
-      updated: "4 weeks ago"
+      updated: "4 weeks ago",
+      description: "Intro to CSS"
     },
     {
       id: 3,
       title: "Week 3 Project",
-      updated: "3 weeks ago"
+      updated: "3 weeks ago",
+      description: "Intro to JS"
     },
     {
       id: 4,
       title: "Week 4 Project",
-      updated: "2 weeks ago"
+      updated: "2 weeks ago",
+      description: "Array methods"
     },
     {
       id: 5,
       title: "Week 5 Project",
-      updated: "1 week ago"
+      updated: "1 week ago",
+      description: "Sorting-Hat"
     },
 ]
 
