@@ -139,3 +139,6 @@ title {
   margin-top: 5px;
 }
 
+.card-body {
+  background-color: black;
+}
