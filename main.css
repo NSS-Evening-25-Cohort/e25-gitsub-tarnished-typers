@@ -1,0 +1,144 @@
+body {
+  background-color: black;
+  color: antiquewhite;
+  display: flex;
+  font-family: Arial, sans-serif;
+}
+
+.black {
+  background-color: rgb(0, 0, 0);
+  color: antiquewhite;
+}
+
+#bio {
+  /* border: 5px double red; */
+  min-width: 300px;
+}
+
+#navBar {
+  display: flex;
+}
+
+#body1 {
+  /* border: 5px double green; */
+}
+
+#body2 {
+  /* border: 5px double blue; */
+}
+
+#footer {
+  /* border: 5px double indigo; */
+}
+
+.packageStyle {
+  background-color: black;
+  border: 1px solid antiquewhite;
+}
+
+.learnMore {
+  background-color: gray;
+  color: antiquewhite;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.form-container {
+  padding: 10px;
+  background-color: black;
+}
+
+#descPack {
+  background-color: antiquewhite;
+}
+#namePack {
+  background-color: antiquewhite;
+}
+.addPackage {
+  background-color: gray;
+  border: none;
+  padding: 8px;
+  color: antiquewhite;
+}
+
+#titleRepo {
+  background-color: antiquewhite;
+}
+#descRepo {
+  background-color: antiquewhite;
+}
+
+.addRepository {
+  background-color: gray;
+  border: none;
+  padding: 8px;
+  color: antiquewhite;
+}
+
+img {
+  border-radius: 50%;
+}
+
+.center {
+  margin: auto;
+  text-align: center;
+  border: 3px solid antiquewhite;
+  padding: 10px;
+}
+
+.rcorners {
+  border-radius: 25px;
+  border: 2px solid #828092;
+  padding: 20px;
+}
+
+.spacer {
+  display: inline-block;
+  padding-left: 26px;
+  color: #2a486c;
+}
+
+#overviewDiv {
+  /* background-color: white; */
+  padding-left: 26px;
+  /* color: black; */
+  margin-top: 10px;
+}
+
+.grey {
+  color: #828092;
+}
+.inline {
+  display: inline-block;
+  padding: 5px;
+}
+
+.profile {
+  border-radius: 50% 50% 0px 0px;
+}
+
+.lrg {
+  font-size: larger;
+}
+
+#pin {
+  background-color: rgb(0, 0, 0);
+}
+
+#projectcards {
+  background-color: black;
+  margin-top: 5px;
+}
+
+#projectcards,
+title {
+  border: 1px double rgb(102, 98, 98);
+}
+
+.projects-form {
+  margin-top: 5px;
+}
+
+.card-body {
+  background-color: black;
+}
